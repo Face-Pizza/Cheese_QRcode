@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import GetTest from './components/getTest';
+import GetPhoto from './components/getPhoto';
 import { Outlet } from 'react-router-dom';
+import Header from './components/header'
 import './App.css'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   
   return (
     <>
-      test Page
+    <Header/>
       <Outlet />
     </>
   )
