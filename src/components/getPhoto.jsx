@@ -32,7 +32,6 @@ const GetPhoto = () => {
     return (
         <>
             <G.GetPhoto>
-                <h2>사진을 다운로드 하세요</h2>
                 {/* 받아온 photo URL로 이미지 출력 */}
                 <G.FourCutPhoto src={photoData.photo} alt="Fetched from server" />
 
