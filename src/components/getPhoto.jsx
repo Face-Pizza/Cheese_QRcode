@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react'
 import * as G from '../style/getStyle';
 import { getQRCode } from '../api/apiService';
 import { useParams } from 'react-router-dom';
+import save from '../assets/SaveVector.png'
 
-const GetPhoto = () => { 
+const GetPhoto = () => {
     const { id } = useParams(); // useParams을 이용하여 URL 매개변수에서 id를 추출
     const [photoData, setPhotoData] = useState(null);
 
@@ -29,15 +30,18 @@ const GetPhoto = () => {
     }
 
     return (
-        <>  
+        <>
             <G.GetPhoto>
                 <h2>사진을 다운로드 하세요</h2>
                 {/* 받아온 photo URL로 이미지 출력 */}
                 <G.FourCutPhoto src={photoData.photo} alt="Fetched from server" />
-                
+
                 {/* 다운로드하기 버튼 */}
                 <a href={photoData.photo} download>
-                    <button>사진 다운로드하기</button>
+                    <button>
+                        사진 다운로드하기<img id='save' src={save} />
+                    </button>
+
                 </a>
 
                 {/* QR 코드 표시 */}

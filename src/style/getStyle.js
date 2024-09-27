@@ -5,6 +5,11 @@ export const GetPhoto = styled.div`
     flex-direction: column;
 
     button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
         width: 382.891px;
         height: 50.3px;
         flex-shrink: 0;
@@ -13,6 +18,14 @@ export const GetPhoto = styled.div`
         border: none;
 
         margin-top: 20px;
+    }
+
+    #save{
+        width: 24px;
+    }
+
+    a{
+        text-decoration: none;
     }
 `
 

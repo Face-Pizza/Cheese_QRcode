@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'omyu pretty';
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,4 +11,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "omyu pretty";
+  font-weight: normal;
+  src: url("./font/omyu pretty.ttf") format("truetype");
+  color: black;
 }
