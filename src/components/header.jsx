@@ -8,7 +8,7 @@ const Header = () => {
     return(
         <>
         <H.Logo src={ Logo } />
-        <p> 사진은 24시간 뒤에 삭제됩니다 </p>
+        <H.HeaderP> 사진은 24시간 뒤에 삭제됩니다 </H.HeaderP>
         <H.manyCheese src={manyCheese}/>
         </>
     )

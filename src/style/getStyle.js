@@ -31,4 +31,5 @@ export const GetPhoto = styled.div`
 
 export const FourCutPhoto = styled.img`
     width: 384px;
+    box-shadow: 3px 3px 10px 3px #666;
 `
