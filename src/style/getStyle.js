@@ -9,6 +9,8 @@ export const GetPhoto = styled.div`
         justify-content: center;
         align-items: center;
         gap: 20px;
+        font-family: 'omyu pretty';
+        font-size: 25px;
 
         width: 382.891px;
         height: 50.3px;

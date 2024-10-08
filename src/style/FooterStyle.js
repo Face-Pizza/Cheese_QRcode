@@ -11,18 +11,19 @@ export const Footer = styled.div`
 #copy{
     text-align: center;
     color: rgba(0, 0, 0, 0.35);
-    padding: 10px 0;
+    padding: 15px 0 0 0;
+    margin: 20px 0 0 0;
 }
 `
 
 export const ButtonBar = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 15px;
-    margin: 10px 0;
+    /* gap: 30px; */
+    margin: 10px 0 0 0;
 
     @media (max-width: 370px) {
         flex-direction: column;

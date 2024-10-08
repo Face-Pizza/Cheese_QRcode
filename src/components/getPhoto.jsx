@@ -38,6 +38,15 @@ const GetPhoto = () => {
         }
     }, [id]);
 
+    const handleDownload = () => {
+        if (photoData && photoData.photo) {
+            const link = document.createElement('a');
+            link.href = photoData.photo;
+            link.download = 'myPhoto.png';  // 다운로드될 파일 이름 지정
+            link.click();  // 다운로드 트리거
+        }
+    };
+
     if (!photoData) {
         return <div>Loading...</div>;  // 데이터를 불러오는 중일 때 표시
     }
@@ -49,11 +58,9 @@ const GetPhoto = () => {
                 <G.FourCutPhoto src={photoData.photo} alt="Fetched from server" />
 
                 {/* 다운로드하기 버튼 */}
-                <a href={photoData.photo} download>
-                    <button>
-                        사진 다운로드하기<img id='save' src={save} />
-                    </button>
-                </a>
+                <button onClick={handleDownload}>
+                    사진 다운로드하기 <img id='save' src={save} />
+                </button>
 
         
             </G.GetPhoto>
