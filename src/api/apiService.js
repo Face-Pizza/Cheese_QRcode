@@ -11,4 +11,3 @@ export const getQRCode = async (id) => {
         throw error;
     }
 };
-
